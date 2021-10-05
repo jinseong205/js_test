@@ -18,4 +18,4 @@ c.addProduct({id: 1, name : '노트북'});
 console.log(c.store);
 
 const p = c.getProudct(1);
-console.log(p);  
+console.log(p);    
