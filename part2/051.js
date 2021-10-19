@@ -19,4 +19,4 @@ console.log(c.store);
 
 const p = c.getProudct(1);
 console.log(p);          
-  
+    
