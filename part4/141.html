@@ -5,9 +5,35 @@
         <title>DOM 이해하기</title>
     </head>
     <body>
+        <div id="div1">hello Dom</div>
         <ul>
             <li>list item1</li>
             <li>list item2</li>
         </ul>
+    
+    <script>
+        const d = document.getElementById('div1');
+        
+        console.log(d.innerHTML);
+        console.log(d.nodeType);
+        console.log(d.nodeType === Node.ELEMENT_NODE);
+
+        console.log(d.constructor);
+        console.log(d instanceof HTMLDivElement);
+        console.log(d instanceof HTMLElement);
+        console.log(d instanceof Element);
+        console.log(d instanceof Node);
+        
+        console.log(Element.prototype);
+        console.log(d.tagName);
+
+        const d2 = document.querySelector('#div1');
+        console.log(d2.innerHTML);
+
+        const ls = document.querySelectorAll('ul li');
+        console.log(ls.item(0).innerHTML);
+        console.log(ls.item(1).innerHTML);
+    </script>
     </body>
+    
 </html>
